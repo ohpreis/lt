@@ -54,10 +54,7 @@ def output_photos(photo_list):
         print("We did not find an album with the ID provided")
 
     for photos in photo_list:
-        if sys.version_info[0] < 3:
-            print('[', photos['id'], ']  ', photos['title'])
-        else:
-            print('[', photos['id'], ']  ', photos['title'])
+        print('[', photos['id'], ']  ', photos['title'])
 
 
 if __name__ == '__main__':
