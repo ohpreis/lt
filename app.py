@@ -56,6 +56,7 @@ def output_photos(photo_list):
     for photos in photo_list:
         print('[', photos['id'], ']  ', photos['title'])
 
+
 def check_required_version():
     """
     Test for the required python version
