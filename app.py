@@ -5,6 +5,10 @@ import requests
 
 def main():
 
+    if sys.version_info[0] != 3:
+        print("This script requires Python 3")
+        exit()
+
     while True:
         try:
             try:
@@ -50,7 +54,10 @@ def output_photos(photo_list):
         print("We did not find an album with the ID provided")
 
     for photos in photo_list:
-        print('[', photos['id'], ']  ', photos['title'])
+        if sys.version_info[0] < 3:
+            print('[', photos['id'], ']  ', photos['title'])
+        else:
+            print('[', photos['id'], ']  ', photos['title'])
 
 
 if __name__ == '__main__':
