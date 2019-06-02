@@ -5,7 +5,7 @@ import requests
 
 def main():
 
-    if sys.version_info[0] != 3:
+    if check_required_version() is False:
         print("This script requires Python 3")
         exit()
 
@@ -56,6 +56,16 @@ def output_photos(photo_list):
     for photos in photo_list:
         print('[', photos['id'], ']  ', photos['title'])
 
+def check_required_version():
+    """
+    Test for the required python version
+
+    :return: boolean
+    """
+    if sys.version_info[0] != 3:
+        return False
+    else:
+        return True
 
 if __name__ == '__main__':
     main()

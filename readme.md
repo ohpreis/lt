@@ -4,7 +4,7 @@ using python.
 
 **FYI:** Python is not my strong suit, but I thought it would be fun to try this on this app. 
 
-### Application Requirements 
+## Application Requirements 
 This application requires Python 3 and the Python Request library. 
 
 *   Download and install [Python 3](https://www.python.org/downloads/)
@@ -16,17 +16,23 @@ After you downloaded the project files, open a terminal and navigate into the pr
 and run the application. 
 
 ```bash
-cd lt-master
 python app.py
+```
+
+or if you have not made python 3 your default
+
+``` bash
+python3 app.py
+
 ```
 
 The app will prompt you to enter a photo album **ID**.
 ``` bash
 python app.py
-Enter the album id to view. 1 through 6 > 
+Enter the album id to view. >
 ```
 
-Enter the album id and press ```return```. The result will look something like the following. 
+Enter an album id and press ```return```. The result will look something like the following. 
 
 ```text
 [ 151 ]   possimus dolor minima provident ipsam
